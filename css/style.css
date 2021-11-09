@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Mohave', sans-serif;
+}
+/* Containers   */
+.container{
+    display: flex;    
+    
+}
+.experiance-container{
+    width: 100%;
+    padding: 3% 5% 5% 5%;
+}
+.container-people{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20,94,168);
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    font-weight:lighter;
+
+}
+
+
+/* Experiance Head */
+.experiance{
+    display: flex;
+    align-items: center;
+    
+}
+div .experiance h3{
+    margin-left: 10px;
+    color: rgb(20,94,168);
+}
+
+/* Image head */
+
+.img-head{
+    max-width: 30px;
+    max-height: 30px;
+}
+.img-head-skills{
+    max-width: 35px;
+    max-height: 35px;
+}
+
+/* Experience text position,company,porion,city*/
+.title-work{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    }
+
+.work-position
+{
+    order: 1;
+    width:50%;
+    
+}
+.work-name{
+    order: 3;
+    color: rgb(94,94,94);
+}
+
+.work-period{
+    order: 2;
+    width:50%;
+    text-align: right;
+    color: rgb(94,94,94);
+}
+.work-city{
+    order: 4;
+    color: rgb(94,94,94);
+}
+
+
+.work-description{
+    padding-top: 20px;
+}
+
+
+
+/* Skills */
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    max-width: 500px;
+    padding-left: 25%;
+}
+.skills-divs{
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 8px;
+    background-color: rgb(30, 136, 229);
+    color: white;
+    align-items: baseline;
+}
+.skills-divs:hover{
+    background: rgb(8, 62, 109);
+	color: white;;
+	box-shadow: inset 0 0 0 3px #2dcc62;
+    transition: 450ms;
+}
+
+
+
+
+/* Education div */
+.education-container{
+    margin-top: 10px;
+}
+
+
+/* Languages */
+.languages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+
+.head-awards{
+    margin-top:10px;
+}
+.text-awards{
+    white-space:inherit;
+}
+
+
+
+
+
+
+/* Portfolio img,text */
+.img-portfolio{
+    display: inline-block;
+    overflow: hidden;
+    width: 33%;
+    padding-bottom: 33%;
+    height: 0;
+    position: relative;
+    margin: 30px auto auto auto;
+}
+
+.img-portfolio img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.block-portfolio{
+    width: 100%;
+    text-align: center;
+}
+.name-portfolio{
+    font-size: 80px;
+    color: white;
+    
+    margin-bottom: 20px;
+}
+.work-portfolio{
+    color: rgb(129, 164, 185);
+    font-size: 20px;
+}
+.about-portfolio{
+    margin: 15px 30px auto 30px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.container-info{
+    margin: 15px 30px auto 30px;
+    color: white;
+    font-size: 20px;
+}
+.info{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info-text{
+    margin-top: 15px;
+}
+.container-link{
+    margin-top: 10px;
+}
+.container-link a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+.links:hover{
+    transition: 500ms;
+    color: aqua;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+.link-telegram{
+    margin-left: 5px;
+}
+.img-link{
+    max-width: 40px;
+    max-height: 40px;
+}
+.skills-left-head{
+    font-weight: bold;
+}
+#right-skills{
+    padding:0;
+    justify-content: space-between;
+    
+}
+#right-skills div{
+    margin-top:10px;
+}
+#right-info{
+    color: white;
+}
+.right-education{
+    padding-top: 40px;
+}
+/* Text for header */
+.work-position, .head-exp{
+    font-size: 20px;
+
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 1em;
+    z-index: 100;
+    background-color:#173670;
+    }
+body::-webkit-scrollbar-thumb {
+    background-color:rgb(44, 78, 187);
+    border-width: 2px 0 2px;
+    border-style: solid;
+    border-color: #2bb69f;
+    box-shadow:0 -100vh 0 100vh #00ffac;
+}
+
+@media screen and (max-width: 754px) {
+    
+    .img-portfolio{
+        margin: 30px auto 15px auto;
+    }
+    .name-portfolio{
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    .about-portfolio{
+        margin: 15px auto 15px 15px;
+    }
+}
