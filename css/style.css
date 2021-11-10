@@ -275,7 +275,29 @@ body::-webkit-scrollbar-thumb {
         text-align: justify;
         padding-right: 15px; 
     }
+    .links{
+        padding-left: 15px;
+    }
+    #link-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+        padding-left:10px;
+
+    }
+    #link-info:hover, #link-info:active{ 
+        transition: 500ms;
+        color: aqua;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
     
+    }
+    .container-link a:nth-child(2){
+        display: none;
+    }
     
 }
 @media screen and (max-width: 615px) {
