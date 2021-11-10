@@ -252,7 +252,13 @@ body::-webkit-scrollbar-thumb {
     border-color: #2bb69f;
     box-shadow:0 -100vh 0 100vh #00ffac;
 }
-
+@media screen and (max-width: 1000px){
+    .about-portfolio{
+        display: inline-block;
+        text-align: justify;
+    }
+    
+}
 @media screen and (max-width: 754px) {
     
     .img-portfolio{
@@ -265,5 +271,22 @@ body::-webkit-scrollbar-thumb {
     }
     .about-portfolio{
         margin: 15px auto 15px 15px;
+        display: inline-block;
+        text-align: justify;
+        padding-right: 15px; 
+    }
+    
+    
+}
+@media screen and (max-width: 615px) {
+    .title-work{
+        flex-direction: column;
+    }
+    .about-portfolio .text-portfolio{
+        display: inline-block;
+        text-align: justify;
+    }
+    #right-info{
+        width: auto;
     }
 }
